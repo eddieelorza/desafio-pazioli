@@ -134,3 +134,19 @@ button.active {
     font-family: 'Raleway', sans-serif;*//*# sourceMappingURL=main.css.map */
 =======
 /*# sourceMappingURL=main.css.map */
+
+/*Global btn*/
+button {
+  border-radius: 8px;
+  background-color: #000000;
+  color: #ffffff;
+  display: inline-block;
+  height: 32px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+button.btn-secondary {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+}/*# sourceMappingURL=main.css.map */
