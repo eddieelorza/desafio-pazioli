@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #E5E5E5;
+}
+
+#logo {
+    width: 65px;
+    height: 19px;
+    left: 38.55px;
+    top: 57px;
+}
+
+#shopping-cart {
+    left: 20%;
+    right: 20%;
+    top: 20%;
+    bottom: 17.14%;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+nav,
+#slogan,
+h1,
+.section,
+main img {
+    position: absolute;
+    text-align: center;
+}
+
+#slogan {
+    width: 176px;
+    height: 19px;
+    left: 71.55px;
+    top: 139px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.78px;
+    color: #858585;
+}
+
+h1 {
+    width: 288px;
+    height: 62px;
+    left: 15.55px;
+    top: 176px;
+    font-family: Abril Fatface;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 43px;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+
+.section a {
+    width: 129px;
+    height: 32px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    text-decoration: none;
+}
+
+.section.cursos {
+    left: 22.55px;
+    top: 270px;
+}
+
+.section.pianos {
+    left: 167.55px;
+    top: 270px;
+}
+
+.section a:active {
+    background-color: #000000;
+    color: white;
+}
+
+#piano-negro {
+    width: 251.69px;
+    height: 194px;
+    left: 33.55px;
+    top: 358px;
+    filter: drop-shadow(-9.40088px 8.11894px 27.348px rgba(0, 0, 0, 0.38));
+}
+
+
+
+/*    font-family: 'Abril Fatface', cursive;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-family: 'Raleway', sans-serif;*/
