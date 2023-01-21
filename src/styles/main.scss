@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: #E5E5E5;
+    margin: 1rem;
+}
+
+nav {
+    display: flex;
+}
+
+#logo {
+    width: 70px;
+    height: 25px;
+}
+
+#menu-primary {
+    visibility: hidden;
+}
+
+main {
+    text-align: center;
+    width: 90vw;
+    height: 90vh;
+}
+
+nav,
+#slogan,
+h1,
+.section,
+main img {
+    position: absolute;
+}
+
+#slogan {
+    width: 176px;
+    height: 19px;
+    left: 71.55px;
+    top: 139px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.78px;
+    color: #858585;
+}
+
+h1 {
+    width: 288px;
+    height: 62px;
+    left: 15.55px;
+    top: 176px;
+    font-family: Abril Fatface;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 43px;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+
+.section a {
+    width: 129px;
+    height: 32px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    color: #000000;
+    text-decoration: none;
+}
+
+.section.cursos {
+    left: 22.55px;
+    top: 270px;
+}
+
+.section.pianos {
+    left: 167.55px;
+    top: 270px;
+}
+
+.section.cursos a:active {
+    background-color: #000000;
+    color: white;
+}
+
+#piano-negro {
+    width: 251.69px;
+    height: 194px;
+    left: 33.55px;
+    top: 358px;
+    filter: drop-shadow(-9.40088px 8.11894px 27.348px rgba(0, 0, 0, 0.38));
+}
+
+button {
+    border-radius: 8px;
+    display: inline-block;
+    height: 32px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 10px 20px;
+}
+
+button.active{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+@media screen and (min-width: 980px) {
+    #menu-primary li {
+        padding: 10px;
+        list-style: none;
+    }
+}
+
+/*    font-family: 'Abril Fatface', cursive;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-family: 'Raleway', sans-serif;*/
