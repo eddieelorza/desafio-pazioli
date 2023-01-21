@@ -116,12 +116,24 @@ button {
     padding: 10px 20px;
 }
 
-button.active{
+button.active {
     background-color: #000000;
     color: #ffffff;
 }
 
-@media screen and (min-width: 980px) {
+.title {
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+
+@media screen and (min-width: 992px) {
     #menu-primary li {
         padding: 10px;
         list-style: none;

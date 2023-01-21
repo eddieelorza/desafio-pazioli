@@ -121,7 +121,7 @@ button.active {
   color: #ffffff;
 }
 
-@media screen and (min-width: 980px) {
+@media screen and (min-width: 992px) {
   #menu-primary li {
     padding: 10px;
     list-style: none;
