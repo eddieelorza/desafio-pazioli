@@ -1,0 +1,54 @@
+/*Colors*/
+/*Fonts*/
+/*FontStyles*/
+/*GLOBAL BTN*/
+a.partner {
+  background-color: #000000;
+  font-size: 32px;
+  font-family: "Raleway", sans-serif;
+  color: #ffffff;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 15px 89px 89px 15px;
+  width: 288px;
+  padding: 5px;
+}
+a.partner p {
+  width: 60%;
+  margin: auto;
+}
+a.partner i {
+  border: 1px solid #ffffff;
+  border-radius: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 88.98px;
+  height: 88.98px;
+  display: inline-block;
+}
+a.partner.partner--reversed {
+  flex-direction: row-reverse;
+  border-radius: 89px 15px 15px 89px;
+}
+a.partner:hover {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+/*Global btn*/
+button {
+  border-radius: 8px;
+  background-color: #000000;
+  color: #ffffff;
+  display: inline-block;
+  height: 32px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+button.btn-secondary {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+}/*# sourceMappingURL=main.css.map */
