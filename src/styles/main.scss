@@ -9,10 +9,13 @@ body {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  width: calc(100vw - 2rem);
+  width: 100vw;
   min-height: 100vh;
   background-color: #e5e5e5;
-  margin: 1rem;
+  margin: 0;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 nav {
@@ -156,8 +159,8 @@ button.active {
       min-width: 100%;
       font-family: "Abril Fatface", cursive;
       font-size: 32px;
-      font-weight: 400;
       margin-bottom: 2rem;
+      font-weight: 400;
     }
   }
 
@@ -179,13 +182,13 @@ button.active {
       margin: 1rem;
       border-bottom: 2px dashed rgba(0, 0, 0, 0.2);
       &.piano-img__1 {
-        background-image: url(../img/pianoCard1.svg);
+        background-image: url(../assets/images/pixlr-bg-result-7.svg);
       }
       &.piano-img__2 {
-        background-image: url(../img/pianoCard2.svg);
+        background-image: url(../assets/images/pixlr-bg-result-4.svg);
       }
       &.piano-img__3 {
-        background-image: url(../img/pianoCard3.svg);
+        background-image: url(../assets/images/pixlr-bg-result-8.svg);
       }
     }
     div.card-information {
@@ -218,17 +221,16 @@ button.active {
         font-size: 1.3rem;
         font-family: "Raleway", sans-serif;
         font-weight: 400;
-        height: 2.7rem !important;
+        height: 32px;
         width: calc(80% - 2rem);
         &:last-of-type {
           background-color: #000000;
           color: #ffffff;
           border: 1px solid #fff;
           width: 2.7rem;
-
           background-repeat: no-repeat;
           background-position: center;
-          background-image: url(../img/addCart.svg);
+          background-image: url(../assets/icons/shopping-cart-white.svg);
           &:hover {
             background-color: rgba(0, 0, 0, 0.7);
             cursor: pointer;
@@ -238,19 +240,19 @@ button.active {
     }
   }
 
-  &:last-of-type {
-    a {
-      margin-bottom: 3rem;
+  #lastBtn {
+    button {
       display: flex;
       align-items: center;
       justify-content: center;
       text-decoration: none;
-      height: 2.7rem;
+      height: 37px;
       background-color: #000000;
       color: #ffffff;
-      font-size: 1rem;
+      font-size: 16px;
       font-weight: 400;
       width: 50vw;
+      margin: 4rem 0;
       &:hover {
         background-color: rgba(0, 0, 0, 0.7);
         cursor: pointer;
@@ -259,11 +261,11 @@ button.active {
   }
 
   @media screen and (min-width: 992px) {
+    min-height: 100vh;
     &:first-of-type {
       h2.subtitle {
-        margin-bottom: 2rem;
         width: 30vw;
-        margin-bottom: 5rem;
+        margin-bottom: calc(3rem + 105px);
       }
     }
     .cards {
@@ -271,20 +273,40 @@ button.active {
       flex-flow: row;
       width: calc(100vw - 2rem);
       justify-content: space-evenly;
+      margin: 0;
       .card-piano {
-        width: calc(250px + 3rem);
-        height: auto;
-        font-size: 3rem;
+        position: relative;
+        width: calc(250px + 1rem);
+        margin: 0;
+        height: 236px;
+        justify-content: flex-end;
         .piano-img {
-          width: 205px;
+          position: absolute;
+          top: -140px;
+          width: calc(205px + 1rem);
           height: 205px;
           align-self: center;
+          background-color: black;
+        }
+        .card-information {
+          p.regular-paragraph {
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: 700;
+          }
+          li {
+            font-size: 12px;
+          }
+        }
+        button {
+          font-size: 16px !important;
+
         }
       }
     }
-    &:last-of-type {
-      a {
-        margin-top: 5rem;
+    #lastBtn {
+      button {
+        font-size: 16px;
         width: 8.2rem;
       }
     }
@@ -294,20 +316,19 @@ button.active {
 
 /*Section partners*/
 #section__partners {
-  transition: all 0.3s linear infinite;
   position: relative;
   background: linear-gradient(177.96deg, #6F6F6F 1.72%, rgba(255, 255, 255, 0.43) 98.63%);
-  min-height: 90vh;
+  min-height: 100vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  width: 100%;
+  width: 100vw;
   .subtitle {
     text-align: center;
     width: 80vw;
     font-family: "Abril Fatface", cursive;
-    font-size: 2rem;
+    font-size: 32px;
     font-weight: 400;
     margin-bottom: 2.5rem;
   }
@@ -323,7 +344,7 @@ button.active {
     }
     a.partner {
       background-color: #000000;
-      font-size: 2rem;
+      font-size: 32px;
       font-family: 'Raleway', sans-serif;
       color: #ffffff;
       display: flex;
@@ -351,6 +372,27 @@ button.active {
         width: 7rem;
         height: 7rem;
         display: inline-block;
+        &.logo__partner-1 {
+          background-image: url(../assets/icons/logo-partner-1.svg);
+        }
+        &.logo__partner-2 {
+          background-image: url(../assets/icons/logo-partner-2.svg);
+        }
+        &.logo__partner-3 {
+          background-image: url(../assets/icons/logo-partner-3.svg);
+        }
+        &.logo__partner-4 {
+          background-image: url(../assets/icons/logo-partner-4.svg);
+        }
+        &.logo__partner-5 {
+          background-image: url(../assets/icons/logo-partner-5.svg);
+        }
+        &.logo__partner-6 {
+          background-image: url(../assets/icons/logo-partner-6.svg);
+        }
+        &.logo__partner-7 {
+          background-image: url(../assets/icons/logo-partner-7.svg);
+        }
       }
       &.partner--reversed {
         flex-direction: row-reverse;
@@ -367,11 +409,9 @@ button.active {
     }
   }
   @media  screen and (min-width: 992px) {
-    min-height: 100vh;
+    height: 100vh;
     .partners__row {
       width: calc(100vw - 2rem);
-      animation: partnersAnimation 2s linear infinite;
-
       a.partner {
         min-width: 330px;
         min-height: 104px;
@@ -380,18 +420,27 @@ button.active {
 
       &.partners__row-1 {
         justify-content: space-evenly;
+        animation: partnersAnimationRow1-3 4s linear infinite;
       }
       &.partners__row-2 {
         justify-content: space-between;
+        position: relative;
         width: 110vw;
+        animation: partnersAnimationRow2 5s linear infinite;
+        @keyframes partnersAnimationRow2 {
+          50% {
+           width: 85vw;
+          }
+         }
       }
       &.partners__row-3 {
         justify-content: space-evenly;
+        animation: partnersAnimationRow1-3 5s linear infinite;
       }
-      @keyframes partnersAnimation {
-       50% {
-        justify-content: center;
-       }
+      @keyframes partnersAnimationRow1-3 {
+        50% {
+          width: 50vw;
+        }
       }
     }
   }

@@ -9,10 +9,13 @@ body {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  width: calc(100vw - 2rem);
+  width: 100vw;
   min-height: 100vh;
   background-color: #e5e5e5;
-  margin: 1rem;
+  margin: 0;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 
 nav {
@@ -156,8 +159,8 @@ button.active {
   min-width: 100%;
   font-family: "Abril Fatface", cursive;
   font-size: 32px;
-  font-weight: 400;
   margin-bottom: 2rem;
+  font-weight: 400;
 }
 #section__piano-types div.card-piano {
   display: flex;
@@ -179,13 +182,13 @@ button.active {
   border-bottom: 2px dashed rgba(0, 0, 0, 0.2);
 }
 #section__piano-types div.card-piano div.piano-img.piano-img__1 {
-  background-image: url(../img/pianoCard1.svg);
+  background-image: url(../assets/images/pixlr-bg-result-7.svg);
 }
 #section__piano-types div.card-piano div.piano-img.piano-img__2 {
-  background-image: url(../img/pianoCard2.svg);
+  background-image: url(../assets/images/pixlr-bg-result-4.svg);
 }
 #section__piano-types div.card-piano div.piano-img.piano-img__3 {
-  background-image: url(../img/pianoCard3.svg);
+  background-image: url(../assets/images/pixlr-bg-result-8.svg);
 }
 #section__piano-types div.card-piano div.card-information {
   padding: 0 1.2rem;
@@ -218,7 +221,7 @@ button.active {
   font-size: 1.3rem;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
-  height: 2.7rem !important;
+  height: 32px;
   width: calc(80% - 2rem);
 }
 #section__piano-types div.card-piano div.card-buttons button:last-of-type {
@@ -228,53 +231,72 @@ button.active {
   width: 2.7rem;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(../img/addCart.svg);
+  background-image: url(../assets/icons/shopping-cart-white.svg);
 }
 #section__piano-types div.card-piano div.card-buttons button:last-of-type:hover {
   background-color: rgba(0, 0, 0, 0.7);
   cursor: pointer;
 }
-#section__piano-types:last-of-type a {
-  margin-bottom: 3rem;
+#section__piano-types #lastBtn button {
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  height: 2.7rem;
+  height: 37px;
   background-color: #000000;
   color: #ffffff;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 400;
   width: 50vw;
+  margin: 4rem 0;
 }
-#section__piano-types:last-of-type a:hover {
+#section__piano-types #lastBtn button:hover {
   background-color: rgba(0, 0, 0, 0.7);
   cursor: pointer;
 }
 @media screen and (min-width: 992px) {
+  #section__piano-types {
+    min-height: 100vh;
+  }
   #section__piano-types:first-of-type h2.subtitle {
-    margin-bottom: 2rem;
     width: 30vw;
-    margin-bottom: 5rem;
+    margin-bottom: calc(3rem + 105px);
   }
   #section__piano-types .cards {
     display: flex;
     flex-flow: row;
     width: calc(100vw - 2rem);
     justify-content: space-evenly;
+    margin: 0;
   }
   #section__piano-types .cards .card-piano {
-    width: calc(250px + 3rem);
-    height: auto;
-    font-size: 3rem;
+    position: relative;
+    width: calc(250px + 1rem);
+    margin: 0;
+    height: 236px;
+    justify-content: flex-end;
   }
   #section__piano-types .cards .card-piano .piano-img {
-    width: 205px;
+    position: absolute;
+    top: -140px;
+    width: calc(205px + 1rem);
     height: 205px;
     align-self: center;
+    background-color: black;
   }
-  #section__piano-types:last-of-type a {
-    margin-top: 5rem;
+  #section__piano-types .cards .card-piano .card-information p.regular-paragraph {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  #section__piano-types .cards .card-piano .card-information li {
+    font-size: 12px;
+  }
+  #section__piano-types .cards .card-piano button {
+    font-size: 16px !important;
+  }
+  #section__piano-types #lastBtn button {
+    font-size: 16px;
     width: 8.2rem;
   }
 }
@@ -282,21 +304,20 @@ button.active {
 /*Section pianos*/
 /*Section partners*/
 #section__partners {
-  transition: all 0.3s linear infinite;
   position: relative;
   background: linear-gradient(177.96deg, #6F6F6F 1.72%, rgba(255, 255, 255, 0.43) 98.63%);
-  min-height: 90vh;
+  min-height: 100vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  width: 100%;
+  width: 100vw;
 }
 #section__partners .subtitle {
   text-align: center;
   width: 80vw;
   font-family: "Abril Fatface", cursive;
-  font-size: 2rem;
+  font-size: 32px;
   font-weight: 400;
   margin-bottom: 2.5rem;
 }
@@ -312,7 +333,7 @@ button.active {
 }
 #section__partners .partners__row a.partner {
   background-color: #000000;
-  font-size: 2rem;
+  font-size: 32px;
   font-family: "Raleway", sans-serif;
   color: #ffffff;
   display: flex;
@@ -342,6 +363,27 @@ button.active {
   height: 7rem;
   display: inline-block;
 }
+#section__partners .partners__row a.partner i.logo__partner-1 {
+  background-image: url(../assets/icons/logo-partner-1.svg);
+}
+#section__partners .partners__row a.partner i.logo__partner-2 {
+  background-image: url(../assets/icons/logo-partner-2.svg);
+}
+#section__partners .partners__row a.partner i.logo__partner-3 {
+  background-image: url(../assets/icons/logo-partner-3.svg);
+}
+#section__partners .partners__row a.partner i.logo__partner-4 {
+  background-image: url(../assets/icons/logo-partner-4.svg);
+}
+#section__partners .partners__row a.partner i.logo__partner-5 {
+  background-image: url(../assets/icons/logo-partner-5.svg);
+}
+#section__partners .partners__row a.partner i.logo__partner-6 {
+  background-image: url(../assets/icons/logo-partner-6.svg);
+}
+#section__partners .partners__row a.partner i.logo__partner-7 {
+  background-image: url(../assets/icons/logo-partner-7.svg);
+}
 #section__partners .partners__row a.partner.partner--reversed {
   flex-direction: row-reverse;
   border-radius: 89px 15px 15px 89px;
@@ -356,12 +398,10 @@ button.active {
 }
 @media screen and (min-width: 992px) {
   #section__partners {
-    min-height: 100vh;
+    height: 100vh;
   }
   #section__partners .partners__row {
     width: calc(100vw - 2rem);
-    -webkit-animation: partnersAnimation 2s linear infinite;
-            animation: partnersAnimation 2s linear infinite;
   }
   #section__partners .partners__row a.partner {
     min-width: 330px;
@@ -370,22 +410,39 @@ button.active {
   }
   #section__partners .partners__row.partners__row-1 {
     justify-content: space-evenly;
+    -webkit-animation: partnersAnimationRow1-3 4s linear infinite;
+            animation: partnersAnimationRow1-3 4s linear infinite;
   }
   #section__partners .partners__row.partners__row-2 {
     justify-content: space-between;
+    position: relative;
     width: 110vw;
+    -webkit-animation: partnersAnimationRow2 5s linear infinite;
+            animation: partnersAnimationRow2 5s linear infinite;
+  }
+  @-webkit-keyframes partnersAnimationRow2 {
+    50% {
+      width: 85vw;
+    }
+  }
+  @keyframes partnersAnimationRow2 {
+    50% {
+      width: 85vw;
+    }
   }
   #section__partners .partners__row.partners__row-3 {
     justify-content: space-evenly;
+    -webkit-animation: partnersAnimationRow1-3 5s linear infinite;
+            animation: partnersAnimationRow1-3 5s linear infinite;
   }
-  @-webkit-keyframes partnersAnimation {
+  @-webkit-keyframes partnersAnimationRow1-3 {
     50% {
-      justify-content: center;
+      width: 50vw;
     }
   }
-  @keyframes partnersAnimation {
+  @keyframes partnersAnimationRow1-3 {
     50% {
-      justify-content: center;
+      width: 50vw;
     }
   }
 }
