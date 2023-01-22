@@ -1,3 +1,5 @@
+@import "./modules/_globals";
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,9 +11,9 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: #E5E5E5;
-    margin: 1rem;
 }
 
+header,
 nav {
     display: flex;
 }
@@ -25,17 +27,12 @@ nav {
     visibility: hidden;
 }
 
-main {
-    text-align: center;
-    width: 90vw;
-    height: 90vh;
-}
-
-nav,
 #slogan,
 h1,
 .section,
-main img {
+main img,
+#piano-negro,
+footer {
     position: absolute;
 }
 
@@ -48,6 +45,9 @@ main img {
     font-size: 16px;
     font-weight: 500;
     line-height: 18.78px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
     color: #858585;
 }
 
@@ -61,39 +61,23 @@ h1 {
     font-weight: 400;
     line-height: 43px;
     letter-spacing: 0.05em;
-    color: #000000;
-}
-
-.section a {
-    width: 129px;
-    height: 32px;
-    border: 1px solid #000000;
-    border-radius: 8px;
-    font-family: Poppins;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 21px;
-    letter-spacing: 0.05em;
-    display: flex;
-    text-align: center;
     align-items: center;
+    text-align: center;
     color: #000000;
-    text-decoration: none;
 }
 
 .section.cursos {
+    width: 274px;
+    height: 32px;
     left: 22.55px;
     top: 270px;
 }
 
 .section.pianos {
+    width: 274px;
+    height: 32px;
     left: 167.55px;
     top: 270px;
-}
-
-.section.cursos a:active {
-    background-color: #000000;
-    color: white;
 }
 
 #piano-negro {
@@ -101,47 +85,164 @@ h1 {
     height: 194px;
     left: 33.55px;
     top: 358px;
+    justify-content: center;
+    align-items: center;
     filter: drop-shadow(-9.40088px 8.11894px 27.348px rgba(0, 0, 0, 0.38));
 }
 
-button {
-    border-radius: 8px;
+footer {
+    width: 100%;
+    height: auto;
+    top: 4160px;
+    background: linear-gradient(177.96deg, rgba(255, 255, 255, 0.43) 1.72%, #6F6F6F 107.44%);
+    margin: 0 1rem;
+}
+
+#logo-footer {
+    display: block;
+    width: 133px;
+    height: 116px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer span {
     display: inline-block;
+    width: 140px;
     height: 32px;
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    background-color: #ffffff;
-    color: #000000;
-    border: 1px solid #000000;
-    padding: 10px 20px;
-}
-
-button.active {
-    background-color: #000000;
-    color: #ffffff;
-}
-
-.title {
-    font-family: 'Abril Fatface';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 43px;
-    display: flex;
-    align-items: center;
     text-align: center;
-    letter-spacing: 0.05em;
-}
+    margin-top: 40px;
 
-@media screen and (min-width: 992px) {
-    #menu-primary li {
-        padding: 10px;
-        list-style: none;
+    img {
+        margin: 0 10px;
     }
 }
 
-/*    font-family: 'Abril Fatface', cursive;
+.footer-columns {
+    margin: 1rem;
+}
 
-    font-family: 'Poppins', sans-serif;
+.footer-columns h4 {
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
 
-    font-family: 'Raleway', sans-serif;*/
+.footer-columns li {
+    list-style: none;
+
+    a {
+        text-decoration: none;
+        color: $colorBlack;
+    }
+}
+
+.footer-columns p,
+.footer-columns li {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+}
+
+#copyright {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 10rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+    #logo {
+        width: 88px;
+        height: 44px;
+        left: 32px;
+        top: 32px;
+    }
+
+    ul {
+        display: flex;
+        vertical-align: middle;
+
+        &#menu-primary {
+            visibility: visible;
+
+
+            li {
+                padding: 10px;
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    color: $colorBlack;
+                }
+            }
+        }
+    }
+
+    #slogan {
+        left: 392px;
+        top: 142px;
+    }
+
+    h1 {
+        width: 494px;
+        height: 62px;
+        left: 233px;
+        top: 179px;
+        font-size: 56px;
+        line-height: 76px;
+    }
+
+    .section.cursos {
+        width: 274px;
+        height: 32px;
+        left: 343px;
+        top: 273px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #piano-negro {
+        position: absolute;
+        width: 589px;
+        height: 454px;
+        left: 210px;
+        top: 383px;
+        filter: drop-shadow(-22px 19px 64px rgba(0, 0, 0, 0.38));
+    }
+
+    .footer-columns {
+        display: inline-block;
+        width: 30%;
+
+        &#left {
+            text-align: center;
+        }
+    }
+
+    .footer-columns ul {
+        display: block;
+    }
+
+    .footer-columns h4,
+    .footer-columns p,
+    .footer-columns li {
+        font-size: 14px;
+        line-height: 21px;
+        text-align: justify;
+    }
+
+    #copyright {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
