@@ -1,34 +1,38 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    background-color: #E5E5E5;
-    margin: 1rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(100vw - 2rem);
+  min-height: 100vh;
+  background-color: #e5e5e5;
+  margin: 1rem;
 }
 
 nav {
-    display: flex;
+  display: flex;
 }
 
 #logo {
-    width: 70px;
-    height: 25px;
+  width: 70px;
+  height: 25px;
 }
 
 #menu-primary {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 main {
-    text-align: center;
-    width: 90vw;
-    height: 90vh;
+  position: relative;
+  text-align: center;
+  width: 90vw;
+  height: 90vh;
 }
 
 nav,
@@ -36,96 +40,96 @@ nav,
 h1,
 .section,
 main img {
-    position: absolute;
+  position: static;
 }
 
 #slogan {
-    width: 176px;
-    height: 19px;
-    left: 71.55px;
-    top: 139px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 18.78px;
-    color: #858585;
+  width: 176px;
+  height: 19px;
+  left: 71.55px;
+  top: 139px;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.78px;
+  color: #858585;
 }
 
 h1 {
-    width: 288px;
-    height: 62px;
-    left: 15.55px;
-    top: 176px;
-    font-family: Abril Fatface;
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 43px;
-    letter-spacing: 0.05em;
-    color: #000000;
+  width: 288px;
+  height: 62px;
+  left: 15.55px;
+  top: 176px;
+  font-family: Abril Fatface;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 43px;
+  letter-spacing: 0.05em;
+  color: #000000;
 }
 
 .section a {
-    width: 129px;
-    height: 32px;
-    border: 1px solid #000000;
-    border-radius: 8px;
-    font-family: Poppins;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 21px;
-    letter-spacing: 0.05em;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    color: #000000;
-    text-decoration: none;
+  width: 129px;
+  height: 32px;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  color: #000000;
+  text-decoration: none;
 }
 
 .section.cursos {
-    left: 22.55px;
-    top: 270px;
+  left: 22.55px;
+  top: 270px;
 }
 
 .section.pianos {
-    left: 167.55px;
-    top: 270px;
+  left: 167.55px;
+  top: 270px;
 }
 
 .section.cursos a:active {
-    background-color: #000000;
-    color: white;
+  background-color: #000000;
+  color: white;
 }
 
 #piano-negro {
-    width: 251.69px;
-    height: 194px;
-    left: 33.55px;
-    top: 358px;
-    filter: drop-shadow(-9.40088px 8.11894px 27.348px rgba(0, 0, 0, 0.38));
+  width: 251.69px;
+  height: 194px;
+  left: 33.55px;
+  top: 358px;
+  filter: drop-shadow(-9.40088px 8.11894px 27.348px rgba(0, 0, 0, 0.38));
 }
 
-button {
-    border-radius: 8px;
-    display: inline-block;
-    height: 32px;
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    background-color: #ffffff;
-    color: #000000;
-    border: 1px solid #000000;
-    padding: 10px 20px;
+button, .btn {
+  border-radius: 8px;
+  display: inline-block;
+  height: 32px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+  padding: 10px 20px;
 }
 
-button.active{
-    background-color: #000000;
-    color: #ffffff;
+button.active {
+  background-color: #000000;
+  color: #ffffff;
 }
 
 @media screen and (min-width: 980px) {
-    #menu-primary li {
-        padding: 10px;
-        list-style: none;
-    }
+  #menu-primary li {
+    padding: 10px;
+    list-style: none;
+  }
 }
 
 /*    font-family: 'Abril Fatface', cursive;
@@ -133,3 +137,156 @@ button.active{
     font-family: 'Poppins', sans-serif;
 
     font-family: 'Raleway', sans-serif;*/
+
+/*Section Jesús*/
+#section__piano-types {
+  transition: all 0.3s;
+  display: flex;
+  min-height: 100vh;
+  width: 80vw;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  gap: 15px;
+  &:first-of-type {
+    min-width: 80vw;
+    h2.subtitle {
+      text-align: center;
+      min-width: 100%;
+      font-family: "Abril Fatface", cursive;
+      font-size: 32px;
+      font-weight: 400;
+      margin-bottom: 2rem;
+    }
+  }
+
+  div.card-piano {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding-bottom: 1.2rem;
+    margin-bottom: 3rem;
+    border-radius: 8px;
+    box-shadow: 0px 28px 64px 12px rgba(0, 0, 0, 0.12);
+    div.piano-img {
+      width: 76vw;
+      height: 80vw;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: 1rem;
+      border-bottom: 2px dashed rgba(0, 0, 0, 0.20);
+      &.piano-img__1 {
+        background-image: url(../img/pianoCard1.svg);
+      }
+      &.piano-img__2 {
+        background-image: url(../img/pianoCard2.svg);
+      }
+      &.piano-img__3 {
+        background-image: url(../img/pianoCard3.svg);
+      }
+    }
+    div.card-information {
+      padding: 0 1.2rem;
+      p.regular-paragraph {
+        font-size: 1.8rem;
+        font-weight: 700;
+      }
+      ul {
+        padding: 1rem 0 1rem 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        li {
+          font-size: 1rem;
+          font-family: "Raleway", sans-serif;
+          &:first-of-type {
+            list-style: none;
+          }
+        }
+      }
+    }
+    div.card-buttons {
+      display: flex;
+      justify-content: space-evenly;
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.3rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 400;
+        height: 2.7rem !important;
+        width: calc(80% - 2rem);
+        &:last-of-type {
+          background-color: #000000;
+          color: #ffffff;
+          border: 1px solid #fff;
+          width: 2.7rem;
+          
+          background-repeat: no-repeat;
+          background-position: center;
+          background-image: url(../img/addCart.svg);
+          &:hover { 
+            background-color: rgba(0, 0, 0, .70);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  &:last-of-type {
+    a {
+      margin-bottom: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      height: 2.7rem;
+      background-color: #000000;
+      color: #ffffff;
+      font-size: 1rem;
+      font-weight: 400;
+      width: 50vw;
+      &:hover {
+        background-color: rgba(0, 0, 0, .70);
+        cursor: pointer;
+      }
+    }
+  }
+
+  @media screen and (min-width: 992px){
+    &:first-of-type {
+      h2.subtitle {
+        margin-bottom: 2rem;
+        width: 30vw;
+        margin-bottom: 5rem;
+      }
+    }
+    .cards {
+      display: flex;
+      flex-flow: row;
+      width: calc(100vw - 2rem);
+      justify-content: space-evenly;
+      .card-piano {
+        width: calc(250px + 3rem);
+        height: auto;
+        font-size: 3rem;
+        .piano-img {
+          width: 205px;
+          height: 205px;
+          align-self: center;
+        }
+      }
+    }
+    &:last-of-type {
+      a {
+        margin-top: 5rem;
+        width: 8.2rem;
+      }
+    }
+  }
+}
+/*Section Jesús*/

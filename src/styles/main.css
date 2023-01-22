@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,9 +7,12 @@
 
 body {
   display: flex;
-  width: 100vw;
-  height: 100vh;
-  background-color: #E5E5E5;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(100vw - 2rem);
+  min-height: 100vh;
+  background-color: #e5e5e5;
   margin: 1rem;
 }
 
@@ -26,6 +30,7 @@ nav {
 }
 
 main {
+  position: relative;
   text-align: center;
   width: 90vw;
   height: 90vh;
@@ -36,7 +41,7 @@ nav,
 h1,
 .section,
 main img {
-  position: absolute;
+  position: static;
 }
 
 #slogan {
@@ -104,7 +109,7 @@ h1 {
   filter: drop-shadow(-9.40088px 8.11894px 27.348px rgba(0, 0, 0, 0.38));
 }
 
-button {
+button, .btn {
   border-radius: 8px;
   display: inline-block;
   height: 32px;
@@ -131,22 +136,147 @@ button.active {
 
     font-family: 'Poppins', sans-serif;
 
-    font-family: 'Raleway', sans-serif;*//*# sourceMappingURL=main.css.map */
-=======
-/*# sourceMappingURL=main.css.map */
-
-/*Global btn*/
-button {
+    font-family: 'Raleway', sans-serif;*/
+/*Section Jesús*/
+#section__piano-types {
+  transition: all 0.3s;
+  display: flex;
+  min-height: 100vh;
+  width: 80vw;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  gap: 15px;
+}
+#section__piano-types:first-of-type {
+  min-width: 80vw;
+}
+#section__piano-types:first-of-type h2.subtitle {
+  text-align: center;
+  min-width: 100%;
+  font-family: "Abril Fatface", cursive;
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+#section__piano-types div.card-piano {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding-bottom: 1.2rem;
+  margin-bottom: 3rem;
   border-radius: 8px;
-  background-color: #000000;
-  color: #ffffff;
-  display: inline-block;
-  height: 32px;
-  font-family: "Raleway", sans-serif;
+  box-shadow: 0px 28px 64px 12px rgba(0, 0, 0, 0.12);
+}
+#section__piano-types div.card-piano div.piano-img {
+  width: 76vw;
+  height: 80vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 1rem;
+  border-bottom: 2px dashed rgba(0, 0, 0, 0.2);
+}
+#section__piano-types div.card-piano div.piano-img.piano-img__1 {
+  background-image: url(../img/pianoCard1.svg);
+}
+#section__piano-types div.card-piano div.piano-img.piano-img__2 {
+  background-image: url(../img/pianoCard2.svg);
+}
+#section__piano-types div.card-piano div.piano-img.piano-img__3 {
+  background-image: url(../img/pianoCard3.svg);
+}
+#section__piano-types div.card-piano div.card-information {
+  padding: 0 1.2rem;
+}
+#section__piano-types div.card-piano div.card-information p.regular-paragraph {
+  font-size: 1.8rem;
   font-weight: 700;
 }
-button.btn-secondary {
-  background-color: #ffffff;
-  color: #000000;
-  border: 1px solid #000000;
-}/*# sourceMappingURL=main.css.map */
+#section__piano-types div.card-piano div.card-information ul {
+  padding: 1rem 0 1rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#section__piano-types div.card-piano div.card-information ul li {
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+}
+#section__piano-types div.card-piano div.card-information ul li:first-of-type {
+  list-style: none;
+}
+#section__piano-types div.card-piano div.card-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+#section__piano-types div.card-piano div.card-buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  height: 2.7rem !important;
+  width: calc(80% - 2rem);
+}
+#section__piano-types div.card-piano div.card-buttons button:last-of-type {
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #fff;
+  width: 2.7rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../img/addCart.svg);
+}
+#section__piano-types div.card-piano div.card-buttons button:last-of-type:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+#section__piano-types:last-of-type a {
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  height: 2.7rem;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 400;
+  width: 50vw;
+}
+#section__piano-types:last-of-type a:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+@media screen and (min-width: 992px) {
+  #section__piano-types:first-of-type h2.subtitle {
+    margin-bottom: 2rem;
+    width: 30vw;
+    margin-bottom: 5rem;
+  }
+  #section__piano-types .cards {
+    display: flex;
+    flex-flow: row;
+    width: calc(100vw - 2rem);
+    justify-content: space-evenly;
+  }
+  #section__piano-types .cards .card-piano {
+    width: calc(250px + 3rem);
+    height: auto;
+    font-size: 3rem;
+  }
+  #section__piano-types .cards .card-piano .piano-img {
+    width: 205px;
+    height: 205px;
+    align-self: center;
+  }
+  #section__piano-types:last-of-type a {
+    margin-top: 5rem;
+    width: 8.2rem;
+  }
+}
+
+/*Section Jesús*//*# sourceMappingURL=main.css.map */
