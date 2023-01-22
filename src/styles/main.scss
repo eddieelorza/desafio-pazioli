@@ -108,7 +108,8 @@ h1 {
   filter: drop-shadow(-9.40088px 8.11894px 27.348px rgba(0, 0, 0, 0.38));
 }
 
-button, .btn {
+button,
+.btn {
   border-radius: 8px;
   display: inline-block;
   height: 32px;
@@ -138,7 +139,7 @@ button.active {
 
     font-family: 'Raleway', sans-serif;*/
 
-/*Section Jesús*/
+/*Section pianos*/
 #section__piano-types {
   transition: all 0.3s;
   display: flex;
@@ -176,7 +177,7 @@ button.active {
       background-repeat: no-repeat;
       background-position: center;
       margin: 1rem;
-      border-bottom: 2px dashed rgba(0, 0, 0, 0.20);
+      border-bottom: 2px dashed rgba(0, 0, 0, 0.2);
       &.piano-img__1 {
         background-image: url(../img/pianoCard1.svg);
       }
@@ -224,12 +225,12 @@ button.active {
           color: #ffffff;
           border: 1px solid #fff;
           width: 2.7rem;
-          
+
           background-repeat: no-repeat;
           background-position: center;
           background-image: url(../img/addCart.svg);
-          &:hover { 
-            background-color: rgba(0, 0, 0, .70);
+          &:hover {
+            background-color: rgba(0, 0, 0, 0.7);
             cursor: pointer;
           }
         }
@@ -251,13 +252,13 @@ button.active {
       font-weight: 400;
       width: 50vw;
       &:hover {
-        background-color: rgba(0, 0, 0, .70);
+        background-color: rgba(0, 0, 0, 0.7);
         cursor: pointer;
       }
     }
   }
 
-  @media screen and (min-width: 992px){
+  @media screen and (min-width: 992px) {
     &:first-of-type {
       h2.subtitle {
         margin-bottom: 2rem;
@@ -289,4 +290,110 @@ button.active {
     }
   }
 }
-/*Section Jesús*/
+/*Section pianos*/
+
+/*Section partners*/
+#section__partners {
+  transition: all 0.3s linear infinite;
+  position: relative;
+  background: linear-gradient(177.96deg, #6F6F6F 1.72%, rgba(255, 255, 255, 0.43) 98.63%);
+  min-height: 90vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  .subtitle {
+    text-align: center;
+    width: 80vw;
+    font-family: "Abril Fatface", cursive;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 2.5rem;
+  }
+
+  .partners__row {
+    display: flex;
+    position: relative;
+    width: calc(100vw - 2rem);
+    overflow: scroll;
+    scroll-behavior: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    a.partner {
+      background-color: #000000;
+      font-size: 2rem;
+      font-family: 'Raleway', sans-serif;
+      color: #ffffff;
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 15px 89px 89px 15px;
+      min-width: 90vw;
+      height: auto;
+      padding: 5px;
+      text-decoration: none;
+      text-transform: uppercase;
+      margin-left: 0;
+      margin-right: 1rem;
+      p {
+        width: 60%;
+        margin: auto;
+      }
+      i {
+        border: 1px solid #ffffff;
+        border-radius: 100%;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 7rem;
+        height: 7rem;
+        display: inline-block;
+      }
+      &.partner--reversed {
+        flex-direction: row-reverse;
+        border-radius: 89px 15px 15px 89px;
+        align-self: flex-start;
+        margin-right: 0;
+        margin-left: 1rem;
+      }
+      &.partner--bordered {
+        flex-direction: row-reverse;
+        border-radius: 89px;
+        margin: 0 1rem;
+      }
+    }
+  }
+  @media  screen and (min-width: 992px) {
+    min-height: 100vh;
+    .partners__row {
+      width: calc(100vw - 2rem);
+      animation: partnersAnimation 2s linear infinite;
+
+      a.partner {
+        min-width: 330px;
+        min-height: 104px;
+        margin: 0;
+      }
+
+      &.partners__row-1 {
+        justify-content: space-evenly;
+      }
+      &.partners__row-2 {
+        justify-content: space-between;
+        width: 110vw;
+      }
+      &.partners__row-3 {
+        justify-content: space-evenly;
+      }
+      @keyframes partnersAnimation {
+       50% {
+        justify-content: center;
+       }
+      }
+    }
+  }
+}
+/*Section partners*/

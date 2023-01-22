@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -109,7 +108,8 @@ h1 {
   filter: drop-shadow(-9.40088px 8.11894px 27.348px rgba(0, 0, 0, 0.38));
 }
 
-button, .btn {
+button,
+.btn {
   border-radius: 8px;
   display: inline-block;
   height: 32px;
@@ -137,7 +137,7 @@ button.active {
     font-family: 'Poppins', sans-serif;
 
     font-family: 'Raleway', sans-serif;*/
-/*Section Jesús*/
+/*Section pianos*/
 #section__piano-types {
   transition: all 0.3s;
   display: flex;
@@ -279,4 +279,115 @@ button.active {
   }
 }
 
-/*Section Jesús*//*# sourceMappingURL=main.css.map */
+/*Section pianos*/
+/*Section partners*/
+#section__partners {
+  transition: all 0.3s linear infinite;
+  position: relative;
+  background: linear-gradient(177.96deg, #6F6F6F 1.72%, rgba(255, 255, 255, 0.43) 98.63%);
+  min-height: 90vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+#section__partners .subtitle {
+  text-align: center;
+  width: 80vw;
+  font-family: "Abril Fatface", cursive;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+}
+#section__partners .partners__row {
+  display: flex;
+  position: relative;
+  width: calc(100vw - 2rem);
+  overflow: scroll;
+  scroll-behavior: auto;
+}
+#section__partners .partners__row::-webkit-scrollbar {
+  display: none;
+}
+#section__partners .partners__row a.partner {
+  background-color: #000000;
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  color: #ffffff;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 15px 89px 89px 15px;
+  min-width: 90vw;
+  height: auto;
+  padding: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-left: 0;
+  margin-right: 1rem;
+}
+#section__partners .partners__row a.partner p {
+  width: 60%;
+  margin: auto;
+}
+#section__partners .partners__row a.partner i {
+  border: 1px solid #ffffff;
+  border-radius: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 7rem;
+  height: 7rem;
+  display: inline-block;
+}
+#section__partners .partners__row a.partner.partner--reversed {
+  flex-direction: row-reverse;
+  border-radius: 89px 15px 15px 89px;
+  align-self: flex-start;
+  margin-right: 0;
+  margin-left: 1rem;
+}
+#section__partners .partners__row a.partner.partner--bordered {
+  flex-direction: row-reverse;
+  border-radius: 89px;
+  margin: 0 1rem;
+}
+@media screen and (min-width: 992px) {
+  #section__partners {
+    min-height: 100vh;
+  }
+  #section__partners .partners__row {
+    width: calc(100vw - 2rem);
+    -webkit-animation: partnersAnimation 2s linear infinite;
+            animation: partnersAnimation 2s linear infinite;
+  }
+  #section__partners .partners__row a.partner {
+    min-width: 330px;
+    min-height: 104px;
+    margin: 0;
+  }
+  #section__partners .partners__row.partners__row-1 {
+    justify-content: space-evenly;
+  }
+  #section__partners .partners__row.partners__row-2 {
+    justify-content: space-between;
+    width: 110vw;
+  }
+  #section__partners .partners__row.partners__row-3 {
+    justify-content: space-evenly;
+  }
+  @-webkit-keyframes partnersAnimation {
+    50% {
+      justify-content: center;
+    }
+  }
+  @keyframes partnersAnimation {
+    50% {
+      justify-content: center;
+    }
+  }
+}
+
+/*Section partners*//*# sourceMappingURL=main.css.map */
