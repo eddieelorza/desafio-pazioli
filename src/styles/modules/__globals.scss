@@ -1,0 +1,90 @@
+/*Colors*/
+$colorBlack: #000000;
+$colorBlackHover: rgba(0, 0, 0, 0.75);;
+$colorWhite: #ffffff;
+$colorYellow: #FFBA60;
+/*Fonts*/
+$primaryFont: 'Abril Fatface', cursive;
+$secondaryFont: 'Raleway', sans-serif;
+/*FontStyles*/
+// $title: ;
+// $subtitle:;
+// $btn-link:;
+// $nav:;
+// $additionalText:;
+
+/*GLOBAL BTN*/
+a.partner {
+    background-color: $colorBlack;
+    font-size: 32px;
+    font-family: $secondaryFont;
+    color: $colorWhite;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px 89px 89px 15px;
+    width: 288px;
+    padding: 5px;
+    p {
+        width: 60%;
+        margin: auto;
+    }
+    i {
+        border: 1px solid $colorWhite;
+        border-radius: 100%;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 88.98px;
+        height: 88.98px;
+        display: inline-block;
+    }
+    &.partner--reversed {
+        flex-direction: row-reverse;
+        border-radius: 89px 15px 15px 89px;
+    }
+    &:hover {
+        background-color: $colorBlackHover;
+    }
+}
+
+/*Global btn*/
+button {
+    border-radius: 8px;
+    background-color: $colorBlack;
+    color: $colorWhite;
+    display: inline-block;
+    height: 32px;
+    font-family: $secondaryFont;
+    font-weight: 700;
+    border: none;
+    margin-top: 30px;
+    
+    
+
+    &.btn-secondary {
+        background-color: $colorWhite;
+        color: $colorBlack;
+        border: 1px solid $colorBlack;
+    }
+
+    &.btn-md{
+        font-size: 1rem;
+        min-width: 70%;
+        height: 30px;
+        padding:0  80px;
+        text-align: center;
+        max-width: 100%;
+    }
+
+
+}
+
+
+.title{
+    color: $colorBlack;
+    font-size:2rem;
+    text-align: center;
+
+}
