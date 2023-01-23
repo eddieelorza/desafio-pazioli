@@ -19,6 +19,7 @@
 ----
 ## 🛠 Skills
 SASS, HTML, CSS...
+
 ----
 ## Versions
 Mobile and Desktop
