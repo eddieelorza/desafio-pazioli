@@ -47,7 +47,7 @@ button {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   border: none;
-  margin-top: 30px;
+  padding: 10px 20px;
 }
 button.btn-secondary {
   background-color: #ffffff;
@@ -76,16 +76,157 @@ button.btn-md {
 }
 
 body {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
-  height: 100vh;
-  background-color: #E5E5E5;
+  min-height: 100vh;
+  background-color: #e5e5e5;
+  margin: 0;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+}
+
+#logo {
+  display: flex;
+  flex-direction: row;
+}
+
+#shop {
+  display: flex;
+  flex-grow: 1;
+  align-self: center;
+  justify-content: center;
+}
+
+#menu-primary {
+  display: flex;
+  flex-direction: row;
+  visibility: hidden;
+}
+
+.slogan {
+  display: block;
+  text-align: center;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+.slogan p {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.78px;
+  color: #858585;
+}
+
+.slogan span {
+  margin-right: 1rem;
+}
+
+h1 {
+  font-family: Abril Fatface;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 43px;
+  text-align: center;
+  color: #000000;
+  margin: 1.5rem 0;
+}
+
+#piano-negro {
+  margin-top: 5rem;
+  text-align: center;
+  filter: drop-shadow(-9.40088px 8.11894px 27.348px rgba(0, 0, 0, 0.38));
+}
+
+.redes {
+  display: block;
+  margin: 5px 0;
+  border: 1px solid #000000;
+  border-radius: 50px;
+  padding: 20px;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  top: 4160px;
+  background: linear-gradient(177.96deg, rgba(255, 255, 255, 0.43) 1.72%, #6F6F6F 107.44%);
+}
+
+#logo-footer {
+  display: block;
+  width: 133px;
+  height: 116px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.redes-footer {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+}
+.redes-footer img {
+  border: 1px solid #000000;
+  border-radius: 22px;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.footer-columns {
+  margin: 1rem;
+}
+
+.footer-columns h4 {
+  font-family: "Abril Fatface", cursive;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.footer-columns li {
+  list-style: none;
+}
+.footer-columns li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.footer-columns p,
+.footer-columns li {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+}
+
+#copyright {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 10rem;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 #myVideo {
   position: fixed;
   right: 0;
   top: 0;
-  min-width: 100%;
   min-height: 50%;
 }
 
@@ -148,13 +289,78 @@ body {
 }
 
 @media screen and (min-width: 992px) {
+  #logo {
+    width: 88px;
+    max-height: 44px;
+    flex-grow: 1;
+  }
+  #menu-primary {
+    visibility: visible;
+    display: flex;
+    flex-direction: row;
+  }
+  #menu-primary li {
+    padding: 10px;
+    list-style: none;
+  }
+  #menu-primary li a {
+    display: block;
+    font-family: "Raleway";
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    color: #000000;
+  }
+  ul {
+    flex-grow: 8;
+    justify-content: flex-end;
+  }
+  #shop {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+  }
+  h1 {
+    font-size: 56px;
+    line-height: 76px;
+  }
+  #piano-negro img {
+    width: 589px;
+    height: 454px;
+  }
+  .footer-columns {
+    display: inline-block;
+    width: 30%;
+  }
+  .footer-columns#left {
+    text-align: center;
+  }
+  .footer-columns ul {
+    display: block;
+  }
+  .footer-columns h4,
+.footer-columns p,
+.footer-columns li {
+    font-size: 14px;
+    line-height: 21px;
+    text-align: justify;
+  }
+  #copyright {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .container {
+    position: relative;
+  }
   #myVideo {
-    position: fixed;
+    position: absolute;
     min-height: 100%;
     bottom: 0;
   }
   .model-content {
-    position: fixed;
+    position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -177,4 +383,314 @@ body {
     width: 50%;
     left: 50px;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+/*Section pianos*/
+#section__piano-types {
+  transition: all 0.3s;
+  display: flex;
+  min-height: 100vh;
+  width: 80vw;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: column;
+  gap: 15px;
+}
+#section__piano-types:first-of-type {
+  min-width: 80vw;
+}
+#section__piano-types:first-of-type h2.subtitle {
+  text-align: center;
+  min-width: 100%;
+  font-family: "Abril Fatface", cursive;
+  font-size: 32px;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+#section__piano-types div.card-piano {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding-bottom: 1.2rem;
+  margin-bottom: 3rem;
+  border-radius: 8px;
+  box-shadow: 0px 28px 64px 12px rgba(0, 0, 0, 0.12);
+}
+#section__piano-types div.card-piano div.piano-img {
+  width: 76vw;
+  height: 80vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 1rem;
+  border-bottom: 2px dashed rgba(0, 0, 0, 0.2);
+}
+#section__piano-types div.card-piano div.piano-img.piano-img__1 {
+  background-image: url(../assets/images/pixlr-bg-result-7.svg);
+}
+#section__piano-types div.card-piano div.piano-img.piano-img__2 {
+  background-image: url(../assets/images/pixlr-bg-result-4.svg);
+}
+#section__piano-types div.card-piano div.piano-img.piano-img__3 {
+  background-image: url(../assets/images/pixlr-bg-result-8.svg);
+}
+#section__piano-types div.card-piano div.card-information {
+  padding: 0 1.2rem;
+}
+#section__piano-types div.card-piano div.card-information p.regular-paragraph {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+#section__piano-types div.card-piano div.card-information ul {
+  padding: 1rem 0 1rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#section__piano-types div.card-piano div.card-information ul li {
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+}
+#section__piano-types div.card-piano div.card-information ul li:first-of-type {
+  list-style: none;
+}
+#section__piano-types div.card-piano div.card-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+#section__piano-types div.card-piano div.card-buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  height: 32px;
+  width: calc(80% - 2rem);
+}
+#section__piano-types div.card-piano div.card-buttons button:last-of-type {
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #fff;
+  width: 2.7rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../assets/icons/shopping-cart-white.svg);
+}
+#section__piano-types div.card-piano div.card-buttons button:last-of-type:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+#section__piano-types #lastBtn {
+  margin: 0;
+}
+#section__piano-types #lastBtn button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  height: 37px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  width: 50vw;
+}
+#section__piano-types #lastBtn button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+@media screen and (min-width: 992px) {
+  #section__piano-types {
+    min-height: 100vh;
+  }
+  #section__piano-types:first-of-type h2.subtitle {
+    width: 30vw;
+    margin-bottom: calc(3rem + 105px);
+  }
+  #section__piano-types .cards {
+    display: flex;
+    flex-flow: row;
+    width: calc(100vw - 2rem);
+    justify-content: space-evenly;
+    margin: 0;
+  }
+  #section__piano-types .cards .card-piano {
+    position: relative;
+    width: calc(250px + 1rem);
+    margin: 0;
+    height: 236px;
+    justify-content: flex-end;
+  }
+  #section__piano-types .cards .card-piano .piano-img {
+    position: absolute;
+    top: -140px;
+    width: calc(205px + 1rem);
+    height: 205px;
+    align-self: center;
+  }
+  #section__piano-types .cards .card-piano .card-information p.regular-paragraph {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  #section__piano-types .cards .card-piano .card-information li {
+    font-size: 12px;
+  }
+  #section__piano-types .cards .card-piano button {
+    font-size: 16px !important;
+  }
+  #section__piano-types #lastBtn {
+    margin: 0;
+  }
+  #section__piano-types #lastBtn button {
+    font-size: 16px;
+    width: 8.2rem;
+  }
+}
+
+/*Section pianos*/
+/*Section partners*/
+#section__partners {
+  position: relative;
+  background: linear-gradient(177.96deg, #6F6F6F 1.72%, rgba(255, 255, 255, 0.43) 98.63%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+}
+#section__partners .subtitle {
+  text-align: center;
+  width: 80vw;
+  font-family: "Abril Fatface", cursive;
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+}
+#section__partners .partners__row {
+  display: flex;
+  position: relative;
+  width: calc(100vw - 2rem);
+  overflow: scroll;
+  scroll-behavior: auto;
+}
+#section__partners .partners__row::-webkit-scrollbar {
+  display: none;
+}
+#section__partners .partners__row a.partner {
+  background-color: #000000;
+  font-size: 32px;
+  font-family: "Raleway", sans-serif;
+  color: #ffffff;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 15px 89px 89px 15px;
+  min-width: 90vw;
+  height: auto;
+  padding: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-left: 0;
+  margin-right: 1rem;
+}
+#section__partners .partners__row a.partner p {
+  width: 60%;
+  margin: auto;
+}
+#section__partners .partners__row a.partner i {
+  border: 1px solid #ffffff;
+  border-radius: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 7rem;
+  height: 7rem;
+  display: inline-block;
+  background-color: gray;
+}
+#section__partners .partners__row a.partner i.logo__partner-1 {
+  background-image: url(../assets/icons/logo-partner-1.svg);
+}
+#section__partners .partners__row a.partner i.logo__partner-2 {
+  background-image: url(../assets/icons/logo-partner-2.svg);
+}
+#section__partners .partners__row a.partner i.logo__partner-3 {
+  background-image: url(../assets/icons/logo-partner-3.svg);
+}
+#section__partners .partners__row a.partner i.logo__partner-4 {
+  background-image: url(../assets/icons/logo-partner-4.svg);
+}
+#section__partners .partners__row a.partner i.logo__partner-5 {
+  background-image: url(../assets/icons/logo-partner-5.png);
+  background-size: cover;
+}
+#section__partners .partners__row a.partner i.logo__partner-6 {
+  background-image: url(../assets/icons/logo-partner-6.svg);
+}
+#section__partners .partners__row a.partner i.logo__partner-7 {
+  background-image: url(../assets/icons/logo-partner-7.svg);
+}
+#section__partners .partners__row a.partner.partner--reversed {
+  flex-direction: row-reverse;
+  border-radius: 89px 15px 15px 89px;
+  align-self: flex-start;
+  margin-right: 0;
+  margin-left: 1rem;
+}
+#section__partners .partners__row a.partner.partner--bordered {
+  flex-direction: row-reverse;
+  border-radius: 89px;
+  margin: 0 1rem;
+}
+@media screen and (min-width: 992px) {
+  #section__partners .partners__row {
+    width: calc(100vw - 2rem);
+  }
+  #section__partners .partners__row a.partner {
+    min-width: 330px;
+    min-height: 104px;
+    margin: 0;
+  }
+  #section__partners .partners__row.partners__row-1 {
+    justify-content: space-evenly;
+    -webkit-animation: partnersAnimationRow1-3 4s linear infinite;
+            animation: partnersAnimationRow1-3 4s linear infinite;
+  }
+  #section__partners .partners__row.partners__row-2 {
+    justify-content: space-between;
+    position: relative;
+    width: 110vw;
+    -webkit-animation: partnersAnimationRow2 5s linear infinite;
+            animation: partnersAnimationRow2 5s linear infinite;
+  }
+  @-webkit-keyframes partnersAnimationRow2 {
+    50% {
+      width: 85vw;
+    }
+  }
+  @keyframes partnersAnimationRow2 {
+    50% {
+      width: 85vw;
+    }
+  }
+  #section__partners .partners__row.partners__row-3 {
+    justify-content: space-evenly;
+    -webkit-animation: partnersAnimationRow1-3 5s linear infinite;
+            animation: partnersAnimationRow1-3 5s linear infinite;
+  }
+  @-webkit-keyframes partnersAnimationRow1-3 {
+    50% {
+      width: 60vw;
+    }
+  }
+  @keyframes partnersAnimationRow1-3 {
+    50% {
+      width: 60vw;
+    }
+  }
+}
+
+/*Section partners*//*# sourceMappingURL=main.css.map */
