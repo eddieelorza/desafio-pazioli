@@ -565,6 +565,7 @@ footer {
 #section__piano-types div.card-piano div.card-information p.regular-paragraph {
   font-size: 1.8rem;
   font-weight: 700;
+  padding: 1.7rem 0 0.5rem 0;
 }
 #section__piano-types div.card-piano div.card-information ul {
   padding: 1rem 0 1rem 0;
@@ -652,7 +653,7 @@ footer {
   }
   #section__piano-types .cards .card-piano .piano-img {
     position: absolute;
-    top: -140px;
+    top: -105px;
     width: calc(205px + 1rem);
     height: 205px;
     align-self: center;
@@ -661,6 +662,7 @@ footer {
     margin-top: 20px;
     font-size: 16px;
     font-weight: 700;
+    padding: 0;
   }
   #section__piano-types .cards .card-piano .card-information li {
     font-size: 12px;
