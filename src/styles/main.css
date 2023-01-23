@@ -380,35 +380,4 @@ body {
   list-style: none;
   font-family: "Raleway", sans-serif;
 }
-
-@media screen and (min-width: 992px) {
-  #myVideo {
-    position: fixed;
-    min-height: 100%;
-    bottom: 0;
-  }
-  .model-content {
-    position: fixed;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .model-content__container {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-  .model-content__container .model-content__info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-  }
-  .model-content__container .model-content__info p {
-    text-align: left;
-    min-width: 50%;
-  }
-  .model-content__container .model-content__info ol {
-    width: 50%;
-    left: 50px;
-  }
-}/*# sourceMappingURL=main.css.map */
+}

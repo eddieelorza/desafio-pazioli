@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafío Pazioli</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@500&family=Raleway:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+
+  <body>
+    <header>
+        <nav>
+            <img id="logo" src="./assets/icons/logo-pazioli.svg">
+            <ul id="menu-primary">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Pianos</a></li>
+                <li><a href="#">Soy estudiante</a></li>
+                <button>Contáctanos</button>
+                <a href="#shop"><img id="shopping-cart" src="./assets/icons/shopping-cart.svg" alt="shopping-cart"></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="slogan">
+            <p>El arte de tocar el piano</p>
+            <h1>Instituto Pazioli</h1>
+            <span class="section cursos">
+                <button>Ver cursos</button>
+            </span>
+            <span class="section pianos">
+                <button class="btn-secondary">Adquirir piano</button>
+            </span>
+        </div>
+        <div id="piano-negro">
+            <img src="./assets/images/pixlr-bg-result .svg" alt="piano-negro">
+            <!--<img class= "redes" src="./assets/icons/fb-icon.svg">
+            <img class="redes" src="./assets/icons/linkedin-icon.svg">
+            <img class="redes" src="./assets/icons/tw-icon.svg"> -->
+        </div>
+      <!-- <p id="slogan">El arte de tocar el piano</p>
+        <h1>Instituto Pazioli</h1>
+        <span class="section cursos">
+            <button class="active">Ver cursos</button>
+        </span>
+        <span class="section pianos">
+            <button>Adquirir piano</button>
+        </span>
+        <img id="piano-negro" src="./assets/images/piano-negro.svg" alt="piano-negro"> -->
+
+        <section class="container">
+            <video autoplay muted loop id="myVideo">
+                <source src="/assets/video/piane-video.mp4" type="video/mp4">
+              </video>
+             <section class="model-content">
+                <h2 class="title">Conoce nuestro nuevo modelo en clase</h2>
+                
+                <section class="model-content__container">
+                    <div class="model-content__img">
+                        <img src="./assets/images/image-piane-2.png" alt="">
+                    </div>
+                     <div class="model-content__info">
+                            <h4>Nuevo Ebony F228</h4>
+                            <span class="valoration">
+                                <span>Valoración:</span>
+                                <div >
+                                    <i class="star-icon"></i>
+                                    <i class="star-icon"></i>
+                                    <i class="star-icon"></i>
+                                    <i class="star-icon"></i>
+                                    <i class="star-icon"></i>
+        
+                                </div>
+                            </span>
+                            <h4>Desde: $110,00.00</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Aliquet donec purus egestas mattis non orci. Tellus id viverra id egestas. Quis enim, mauris velit feugiat vestibulum adipiscing elementum gravida. Egestas felis pellentesque vitae sed.
+                            </p>
+                            <ol>
+                                <li>Nuevo</li>
+                                <li>Acustico</li>
+                                <li>M. Cedro</li>
+                            </ol>
+                            <div>
+                                <button class="btn-md">Agregar a la lista</button>
+                            </div>
+
+                        </div>
+
+                </section>
+
+             </section>
+  
+        </section>
+
+
+    </main>
+
+    <!-- PIANOS SECTION -->
+    <section id="section__piano-types">
+      <div class="piano-types__item">
+        <h2 class="subtitle">¿Qué tipo de piano estás buscando?</h2>
+      </div>
+      <div class="piano-types__item cards">
+        <!-- CARDS -->
+        <div class="card-piano">
+          <div class="piano-img piano-img__1"></div>
+          <div class="card-information">
+            <p class="regular-paragraph">Walnut Strauss</p>
+            <ul>
+              <li>Nuevo</li>
+              <li>2021</li>
+              <li>Acústico</li>
+              <li>M. Cedro</li>
+            </ul>
+          </div>
+          <div class="card-buttons">
+            <button>Desde<strong>: $ 305 mn</strong></button>
+            <button></button>
+          </div>
+        </div>
+        <div class="card-piano">
+          <div class="piano-img piano-img__2"></div>
+          <div class="card-information">
+            <p class="regular-paragraph">Walnut Strauss</p>
+            <ul>
+              <li>Nuevo</li>
+              <li>2021</li>
+              <li>Acústico</li>
+              <li>M. Cedro</li>
+            </ul>
+          </div>
+          <div class="card-buttons">
+            <button>Desde<strong>: $ 305 mn</strong></button>
+            <button></button>
+          </div>
+        </div>
+        <div class="card-piano">
+          <div class="piano-img piano-img__3"></div>
+          <div class="card-information">
+            <p class="regular-paragraph">Walnut Strauss</p>
+            <ul>
+              <li>Nuevo</li>
+              <li>2021</li>
+              <li>Acústico</li>
+              <li>M. Cedro</li>
+            </ul>
+          </div>
+          <div class="card-buttons">
+            <button>Desde<strong>: $ 305 mn</strong></button>
+            <button></button>
+          </div>
+        </div>
+        <!-- CARDS -->
+      </div>
+      <div class="piano-types__item" id="lastBtn">
+        <button href="#">Ver mas</button>
+      </div>
+    </section>
+    <!-- PIANOS SECTION -->
+    <div class="form-container">
+        <h2>Contáctanos</h2>
+        <p>¿Quieres educarte formalmente en este instrumento? Toca más rápido, logra mayor fluidez en las
+            composiciones complejas. Contactános para conocer tus objetivos.</p>
+            <form action="">
+        
+                <label for="in1">Nombre</label><br>
+                <input id="in1" type="text"><br>
+                <span class="row-container" >
+                    <span class="form-columns">
+                        <label for="in2">Teléfono</label><br>
+                        <input id="in2" type="text"> 
+                    </span>
+                    <span class="form-columns">
+                        <label for="in3">Email</label><br>
+                        <input id="in3" type="text">
+                    </span>
+                </span>
+                <label for="txt1">Cuéntanos más</label><br>
+                <textarea class="3" id="txt1"></textarea><br>
+                <button>Enviar</button>
+                
+            </form>
+    </div>
+    <!-- PARTNERS -->
+    <section id="section__partners">
+      <div>
+        <h2 class="subtitle">Conoce nuestros partners</h2>
+      </div>
+      <div class="partners__row partners__row-1">
+        <a href="#" class="partner">
+          <p>petrof</p>
+          <i class="logo__partner-1"></i>
+        </a>
+        <a href="#" class="partner partner--reversed">
+          <p>paris pian</p>
+          <i class="logo__partner-2"></i>
+        </a>
+      </div>
+      <div class="partners__row partners__row-2">
+        <a href="#" class="partner partner--reversed">
+          <p>Yamaha</p>
+          <i class="logo__partner-3"></i>
+        </a>
+        <a href="#" class="partner partner--bordered">
+          <p>bookpa</p>
+          <i class="logo__partner-4"></i>
+        </a>
+        <a href="#" class="partner">
+          <p>Hefilti</p>
+          <i class="logo__partner-5"></i>
+        </a>
+      </div>
+      <div class="partners__row partners__row-3">
+        <a href="#" class="partner">
+          <p>pianotwo</p>
+          <i class="logo__partner-6"></i>
+        </a>
+        <a href="#" class="partner partner--reversed">
+          <p>piafamar</p>
+          <i class="logo__partner-7"></i>
+        </a>
+      </div>
+    </section>
+    <!-- PARTNERS -->
+    
+    </main>
+
+    <footer>
+        <div class="footer-columns" id="left">
+            <img id="logo-footer" src="./assets/images/logo-footer.svg" alt="logo-footer">
+            <div class="redes-footer">
+                <img src="./assets/icons/fb-icon.svg">
+                <img src="./assets/icons/tw-icon.svg">
+                <img src="./assets/icons/linkedin-icon.svg">
+            </div>
+        </div>
+        <div class="footer-columns" id="center">
+            <h4>Nosotros</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Nuevo</a></li>
+                <li><a href="#">Conoce nuestros cursos</a></li>
+            </ul>
+        </div>
+        <div class="footer-columns" id="right">
+            <h4>Contáctanos</h4>
+            <p>México</p>
+            <p>Tonalá 10, Roma Nte., Cuauhtémoc, 03800 Ciudad de México, CDMX.</p>
+        </div>
+        <p id="copyright">© Pazioli 2021, todos los derechos reservados.</p>
+    </footer>
+        
+    
+  </body>
+</html>
