@@ -61,95 +61,80 @@ button.btn-secondary {
 }
 
 body {
-  display: flex;
-  width: 100vw;
-  height: 100vh;
   background-color: #E5E5E5;
 }
 
-header,
 nav {
   display: flex;
+  flex-direction: row;
+  margin: 1rem;
 }
 
 #logo {
-  width: 70px;
-  height: 25px;
+  display: flex;
+  flex-direction: row;
+}
+
+#shop {
+  display: flex;
+  flex-grow: 1;
+  align-self: center;
+  justify-content: center;
 }
 
 #menu-primary {
+  display: flex;
+  flex-direction: row;
   visibility: hidden;
 }
 
-#slogan,
-h1,
-.section,
-main img,
-#piano-negro,
-footer {
-  position: absolute;
+.slogan {
+  display: block;
+  text-align: center;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
 }
-
-#slogan {
-  width: 176px;
-  height: 19px;
-  left: 71.55px;
-  top: 139px;
+.slogan p {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 18.78px;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.05em;
   color: #858585;
 }
 
+.slogan span {
+  margin-right: 1rem;
+}
+
 h1 {
-  width: 288px;
-  height: 62px;
-  left: 15.55px;
-  top: 176px;
   font-family: Abril Fatface;
   font-size: 32px;
   font-weight: 400;
   line-height: 43px;
-  letter-spacing: 0.05em;
-  align-items: center;
   text-align: center;
   color: #000000;
-}
-
-.section.cursos {
-  width: 274px;
-  height: 32px;
-  left: 22.55px;
-  top: 270px;
-}
-
-.section.pianos {
-  width: 274px;
-  height: 32px;
-  left: 167.55px;
-  top: 270px;
+  margin: 1.5rem 0;
 }
 
 #piano-negro {
-  width: 251.69px;
-  height: 194px;
-  left: 33.55px;
-  top: 358px;
-  justify-content: center;
-  align-items: center;
+  margin-top: 5rem;
+  text-align: center;
   filter: drop-shadow(-9.40088px 8.11894px 27.348px rgba(0, 0, 0, 0.38));
 }
 
+.redes {
+  display: block;
+  margin: 5px 0;
+  border: 1px solid #000000;
+  border-radius: 50px;
+  padding: 20px;
+}
+
 footer {
+  position: absolute;
   width: 100%;
-  height: auto;
   top: 4160px;
   background: linear-gradient(177.96deg, rgba(255, 255, 255, 0.43) 1.72%, #6F6F6F 107.44%);
-  margin: 0 1rem;
 }
 
 #logo-footer {
@@ -160,15 +145,16 @@ footer {
   margin-right: auto;
 }
 
-footer span {
-  display: inline-block;
-  width: 140px;
-  height: 32px;
-  text-align: center;
+.redes-footer {
+  display: flex;
   margin-top: 40px;
+  justify-content: center;
 }
-footer span img {
-  margin: 0 10px;
+.redes-footer img {
+  border: 1px solid #000000;
+  border-radius: 22px;
+  padding: 10px;
+  margin: 0 5px;
 }
 
 .footer-columns {
@@ -209,58 +195,50 @@ footer span img {
   line-height: 14px;
   margin-top: 10rem;
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 @media screen and (min-width: 992px) {
   #logo {
     width: 88px;
-    height: 44px;
-    left: 32px;
-    top: 32px;
+    max-height: 44px;
+    flex-grow: 1;
   }
-  ul {
-    display: flex;
-    vertical-align: middle;
-  }
-  ul#menu-primary {
+  #menu-primary {
     visibility: visible;
+    display: flex;
+    flex-direction: row;
   }
-  ul#menu-primary li {
+  #menu-primary li {
     padding: 10px;
     list-style: none;
   }
-  ul#menu-primary li a {
+  #menu-primary li a {
+    display: block;
+    font-family: "Raleway";
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
     text-decoration: none;
     color: #000000;
   }
-  #slogan {
-    left: 392px;
-    top: 142px;
+  ul {
+    flex-grow: 8;
+    justify-content: flex-end;
+  }
+  #shop {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
   }
   h1 {
-    width: 494px;
-    height: 62px;
-    left: 233px;
-    top: 179px;
     font-size: 56px;
     line-height: 76px;
   }
-  .section.cursos {
-    width: 274px;
-    height: 32px;
-    left: 343px;
-    top: 273px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  #piano-negro {
-    position: absolute;
+  #piano-negro img {
     width: 589px;
     height: 454px;
-    left: 210px;
-    top: 383px;
-    filter: drop-shadow(-22px 19px 64px rgba(0, 0, 0, 0.38));
   }
   .footer-columns {
     display: inline-block;
