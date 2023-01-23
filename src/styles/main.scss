@@ -286,7 +286,6 @@ button.active {
           width: calc(205px + 1rem);
           height: 205px;
           align-self: center;
-          background-color: black;
         }
         .card-information {
           p.regular-paragraph {
@@ -366,12 +365,12 @@ button.active {
       i {
         border: 1px solid #ffffff;
         border-radius: 100%;
-        background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
         width: 7rem;
         height: 7rem;
         display: inline-block;
+        background-color: gray;
         &.logo__partner-1 {
           background-image: url(../assets/icons/logo-partner-1.svg);
         }
@@ -385,7 +384,8 @@ button.active {
           background-image: url(../assets/icons/logo-partner-4.svg);
         }
         &.logo__partner-5 {
-          background-image: url(../assets/icons/logo-partner-5.svg);
+          background-image: url(../assets/icons/logo-partner-5.png);
+          background-size:cover;
         }
         &.logo__partner-6 {
           background-image: url(../assets/icons/logo-partner-6.svg);
@@ -439,7 +439,7 @@ button.active {
       }
       @keyframes partnersAnimationRow1-3 {
         50% {
-          width: 50vw;
+          width: 60vw;
         }
       }
     }
