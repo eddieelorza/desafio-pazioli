@@ -58,10 +58,8 @@ button {
     height: 32px;
     font-family: $secondaryFont;
     font-weight: 700;
+    padding: 10px 20px;
     border: none;
-    margin-top: 30px;
-    
-    
 
     &.btn-secondary {
         background-color: $colorWhite;
@@ -86,5 +84,4 @@ button {
     color: $colorBlack;
     font-size:2rem;
     text-align: center;
-
 }
