@@ -23,7 +23,11 @@ body {
 nav {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     margin: 1rem;
+    width: calc(100vw - 3rem);
+    padding: 0 20px;
+
 }
 
 #logo {
@@ -41,7 +45,13 @@ nav {
 #menu-primary {
     display: flex;
     flex-direction: row;
-    visibility: hidden;
+    li, button{
+      display: none;
+    }
+    
+    a {
+        visibility: visible;
+    }
 }
 
 .slogan {
@@ -74,9 +84,13 @@ h1 {
 }
 
 #piano-negro {
+    width: 100%;
     margin-top: 5rem;
     text-align: center;
     filter: drop-shadow(-9.40088px 8.11894px 27.348px rgba(0, 0, 0, 0.38));
+    img{
+       width: 100%;
+    }
 }
 
 .redes {
@@ -88,7 +102,6 @@ h1 {
 }
 
 footer {
-    position: absolute;
     width: 100%;
     top: 4160px;
     background: linear-gradient(177.96deg, rgba(255, 255, 255, 0.43) 1.72%, #6F6F6F 107.44%);
@@ -157,14 +170,17 @@ footer {
     margin-bottom: 2rem;
 }
 
-
+.container{
+  position: relative;
+}
 
 #myVideo {
-    position: fixed;
+    position: absolute;
     right: 0;
     top: 0;
     min-height: 50%;
   }
+
 
   .model-content {
     position: relative;
@@ -249,11 +265,90 @@ footer {
 
     
   }
+    /*form*/
+.form-container {
+    width: 100%;
+    height: 870px;
+    left: 0px;
+    top: 2742px;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.35) 100%), url("../assets/images/bg-piane.jpeg") no-repeat;
+    background-size: cover;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 5%;
+    gap: 5%;
+  
+  h2{
+      font-family: 'Abril Fatface';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: 0.05em;
+  }
+  
+    p{
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.05em;
+    }
+    
+    input{
+      background: rgba(0, 0, 0, 0.65);
+      border: 1px solid #FFFFFF;
+      border-radius: 4px;
+      width: 100%;
+      height: 36px;
+      
+  
+     }
+     textarea{
+      background: rgba(0, 0, 0, 0.65);
+      border: 1px solid #FFFFFF;
+      border-radius: 4px;
+      width: 100%;
+      height: 148px;
+      
+     }
+  
+     label{
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.05em;
+      margin-top: 5%;
+      
+     }
+    
+     button{
+      width: 100%;
+      height: 32px;
+      color: #ffffff;
+      background: #000000;
+      border-radius: 8px;
+      margin-top: 5%;
+     
+    }
+  
+     button:hover {
+      background-color: rgba(0, 0, 0, 0.75);
+  }
+  }
 
 
 
 
   @media screen and (min-width: 992px) {
+ 
       #logo {
         width: 88px;
         max-height: 44px;
@@ -266,9 +361,11 @@ footer {
         flex-direction: row;
 
 
-        li {
+        li, button {
+            display: block;
             padding: 10px;
             list-style: none;
+            
 
             a {
                 display: block;
@@ -329,11 +426,8 @@ footer {
         font-size: 14px;
         line-height: 16px;
     }
-    .container{
-        position: relative;
-    }
+
     #myVideo {
-        position: absolute;
         min-height: 100%;
         bottom: 0;
       }
@@ -369,6 +463,63 @@ footer {
          }
 
       }
+      .form-container {
+        display: flex;
+        height: 854px;
+        padding: 10% 20% 5% 20%;
+
+        h2{
+            font-size: 32px;
+            line-height: 43px;
+        }
+        
+          p{
+            font-size: 16px;
+            line-height: 19px;
+          }
+
+          .row-container{
+            display: flex; 
+            flex-direction: row;
+            gap: 10px;
+            padding-top: 5px;
+            justify-content: center;
+
+            label{
+                padding-left: 0;
+            }
+          }
+          
+          .form-columns {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+          }
+
+
+          input {
+            width: 100%;
+            height: 36px;
+            margin-bottom: 4%;
+          }
+
+
+           textarea{
+            width: 100%;
+            height: 148px;
+           }
+        
+           label{
+            width: fit-content;
+            height: 36px;
+            margin: 0;
+           }
+          
+           button{
+            width: 100%;
+            height: 32px;
+          }
+    }
 
 
   }
@@ -495,6 +646,7 @@ footer {
     }
   }
 
+
   @media screen and (min-width: 992px) {
     min-height: 100vh;
     &:first-of-type {
@@ -551,7 +703,6 @@ footer {
 
 /*Section partners*/
 #section__partners {
-  position: relative;
   background: linear-gradient(177.96deg, #6F6F6F 1.72%, rgba(255, 255, 255, 0.43) 98.63%);
   min-height: 100vh;
   display: flex;
@@ -570,7 +721,6 @@ footer {
 
   .partners__row {
     display: flex;
-    position: relative;
     width: calc(100vw - 2rem);
     overflow: scroll;
     scroll-behavior: auto;
