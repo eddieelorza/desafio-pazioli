@@ -13,7 +13,7 @@ body {
   align-items: center;
   width: 100vw;
   min-height: 100vh;
-  background-color: #e5e5e5;
+  background-color: #ffffff;
   margin: 0;
   &::-webkit-scrollbar {
     display: none;
@@ -27,6 +27,7 @@ nav {
     margin: 1rem;
     width: calc(100vw - 3rem);
     padding: 0 20px;
+    background-color: #FFFFFF;
 
 }
 
