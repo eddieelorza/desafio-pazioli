@@ -46,8 +46,8 @@ button {
   height: 32px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  border: none;
   padding: 10px 20px;
+  border: none;
 }
 button.btn-secondary {
   background-color: #ffffff;
@@ -517,11 +517,12 @@ footer {
   transition: all 0.3s;
   display: flex;
   min-height: 100vh;
-  width: 80vw;
+  width: 100vw;
   justify-content: space-around;
   align-items: center;
   flex-flow: column;
   gap: 15px;
+  background-color: #ffffff;
 }
 #section__piano-types:first-of-type {
   min-width: 80vw;
@@ -539,7 +540,7 @@ footer {
   flex-flow: column wrap;
   justify-content: space-between;
   background-color: #ffffff;
-  padding-bottom: 1.2rem;
+  padding: 1.2rem;
   margin-bottom: 3rem;
   border-radius: 8px;
   box-shadow: 0px 28px 64px 12px rgba(0, 0, 0, 0.12);
@@ -550,7 +551,6 @@ footer {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  margin: 1rem;
   border-bottom: 2px dashed rgba(0, 0, 0, 0.2);
 }
 #section__piano-types div.card-piano div.piano-img.piano-img__1 {
@@ -561,9 +561,6 @@ footer {
 }
 #section__piano-types div.card-piano div.piano-img.piano-img__3 {
   background-image: url(../assets/images/pixlr-bg-result-8.svg);
-}
-#section__piano-types div.card-piano div.card-information {
-  padding: 0 1.2rem;
 }
 #section__piano-types div.card-piano div.card-information p.regular-paragraph {
   font-size: 1.8rem;
@@ -584,23 +581,26 @@ footer {
 }
 #section__piano-types div.card-piano div.card-buttons {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 #section__piano-types div.card-piano div.card-buttons button {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.3rem;
+  font-size: 16px;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   height: 32px;
-  width: calc(80% - 2rem);
+  width: calc(90% - 2rem);
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
 }
 #section__piano-types div.card-piano div.card-buttons button:last-of-type {
   background-color: #000000;
   color: #ffffff;
   border: 1px solid #fff;
-  width: 2.7rem;
+  width: 32px;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url(../assets/icons/shopping-cart-white.svg);
@@ -664,9 +664,6 @@ footer {
   }
   #section__piano-types .cards .card-piano .card-information li {
     font-size: 12px;
-  }
-  #section__piano-types .cards .card-piano button {
-    font-size: 16px !important;
   }
   #section__piano-types #lastBtn {
     margin: 0;
@@ -732,6 +729,7 @@ footer {
   border-radius: 100%;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: auto;
   width: 7rem;
   height: 7rem;
   display: inline-block;
@@ -751,7 +749,7 @@ footer {
 }
 #section__partners .partners__row a.partner i.logo__partner-5 {
   background-image: url(../assets/icons/logo-partner-5.png);
-  background-size: cover;
+  background-size: contain;
 }
 #section__partners .partners__row a.partner i.logo__partner-6 {
   background-image: url(../assets/icons/logo-partner-6.svg);
