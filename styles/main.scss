@@ -429,6 +429,7 @@ footer {
     }
 
     #myVideo {
+        width:100vw;
         min-height: 100%;
         bottom: 0;
       }
@@ -437,6 +438,7 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 75px;
       }
 
       .model-content__container{
